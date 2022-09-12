@@ -27,7 +27,7 @@ function useField() {
 }
 
 function useTodos() {
-	const [todos, setTodos] = useState([{ value: 'hola', completed: false }]) // { value: string, completed: boolean }[]
+	const [todos, setTodos] = useState([]) // { value: string, completed: boolean }[]
 	const [type, setType] = useState(TYPES.ALL)
 
 	const { reset, ...field } = useField()
