@@ -1,0 +1,70 @@
+@font-face {
+	font-family: Vodafone;
+	src: local('Vodafone'),
+		url(./assets/fonts/vodafone-rg.ttf) format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Josefin Sans;
+	src: local('Josefin Sans'),
+		url(./assets/fonts/josefin-rg.ttf) format('truetype');
+	font-weight: normal;
+}
+
+:root {
+	--heading-color: hsl(0, 0%, 100%);
+	--family-vodafone: Vodafone;
+	--family-josefin: Josefin Sans;
+
+	--gradient-bg: linear-gradient(to right, #ff00cc, #333399);
+	--clr-primary: hsl(0, 0%, 98%);
+	--clr-page-bg: hsl(235, 21%, 11%);
+	--clr-card-bg: hsl(235, 24%, 19%);
+	--clr-border-btn: hsl(236, 20%, 27%);
+	--clr-btn-active: hsl(221, 93%, 62%);
+	--clr-gb-1: hsl(236, 33%, 92%);
+	--clr-gb-2: hsl(234, 39%, 75%);
+	--clr-gb-3: hsl(234, 11%, 52%);
+	--clr-gb-4: hsl(237, 12%, 36%);
+	--clr-gb-5: hsl(233, 14%, 35%);
+	--clr-gb-6: hsl(235, 19%, 24%);
+
+	--card-max-width: 340px;
+}
+
+.light {
+	--clr-primary: hsl(243, 12%, 30%);
+	--clr-page-bg: hsl(0, 0%, 98%);
+	--clr-card-bg: hsl(0, 0%, 100%);
+}
+
+* {
+	font-family: Vodafone;
+	margin: 0;
+}
+
+img {
+	user-select: none;
+}
+
+.flex {
+	display: flex;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.flex-center {
+	align-items: center;
+	justify-content: center;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-space-between {
+	justify-content: space-between;
+}
