@@ -1,21 +1,22 @@
 .app {
-  background: var(--clr-page-bg) var(--gradient-bg) no-repeat 0% 0% / 100vw 11rem;
+	background: var(--clr-page-bg) var(--gradient-bg) no-repeat 0% 0% / 100vw
+		18rem;
 	min-height: 100vh;
-	padding: 0 0.5rem 0 0.5rem;
+	padding: 0 1rem 0 1rem;
 }
 
 .header h1 {
-	font-size: 1.2rem;
+	font-size: 2.5rem;
 	font-family: var(--family-josefin);
 	color: var(--clr-primary);
 	letter-spacing: 0.5rem;
 }
 
 .container {
-	margin-top: 3.5rem;
+	margin-top: 6rem;
 	width: 100%;
-	max-width: var(--card-max-width);
-	gap: 1rem;
+	max-width: 32rem;
+	gap: 2rem;
 }
 
 .container main {
@@ -28,16 +29,19 @@
 
 .card {
 	background-color: var(--clr-card-bg);
-	border-radius: 4px;
+	border-radius: 5px;
+	overflow: hidden;
 }
 
 .input-card {
-	padding: 0.5rem;
+	padding: 1rem;
+	align-items: center;
+	gap: 1rem;
 }
 
 .btn-container {
-	width: 1rem;
-	height: 1rem;
+	width: 1.5rem;
+	height: 1.5rem;
 	border: 1px solid var(--clr-border-btn);
 	border-radius: 50%;
 	overflow: hidden;
@@ -53,7 +57,7 @@
 	background-color: transparent;
 	padding: 0;
 	width: 100%;
-	font-size: 9px;
+	font-size: 14px;
 	border: none;
 	color: var(--clr-gb-2);
 	user-select: none;
@@ -63,7 +67,7 @@
 	cursor: pointer;
 }
 
-
-.btn:active, .btn-container:active {
+.btn:active,
+.btn-container:active {
 	transform: scale(0.95);
 }
