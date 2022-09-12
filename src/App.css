@@ -1,6 +1,6 @@
 .app {
 	background: var(--clr-page-bg) var(--gradient-bg) no-repeat 0% 0% / 100vw
-		18rem;
+		16rem;
 	min-height: 100vh;
 	padding: 0 1rem 1rem 1rem;
 }

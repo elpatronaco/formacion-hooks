@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import Header from './header'
+import Counter from './counter'
 import Input from './input'
 import Item from './item'
 import './app.css'
@@ -103,8 +104,9 @@ export default function App() {
 		<div className={`app flex justify-center ${isLight ? 'light' : ''}`}>
 			<div className="container flex column">
 				<Header />
+				<Counter />
 				<main className="flex column">
-					<div className="card input-card flex">
+					<div className="flex card input-card shadow">
 						<div className="btn-container flex justify-center">
 							<button className="btn" onClick={add}>
 								+

@@ -1,0 +1,5 @@
+.counter-container > span {
+    width: fit-content;
+    font-size: large;
+    color: var(--heading-color);
+}
