@@ -131,7 +131,9 @@ export default function App() {
 
 									return (
 										<li
-											className={type === value ? "active" : ""}
+											className={
+												type === value ? 'active' : ''
+											}
 											onClick={() => setType(value)}
 											key={`filter-item-${typeKey}-${i}`}
 										>
