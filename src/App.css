@@ -9,7 +9,7 @@
 	font-size: 2.5rem;
 	font-family: var(--family-josefin);
 	color: var(--clr-primary);
-	letter-spacing: 0.5rem;
+	letter-spacing: 0.8rem;
 }
 
 .container {
@@ -71,3 +71,37 @@
 .btn-container:active {
 	transform: scale(0.95);
 }
+
+.info-container {
+	padding: 1rem;
+	color: var(--clr-gb-3);
+	font-size: 14px;
+	flex: 1;
+}
+
+.filter-list {
+	padding: 0;
+	gap: 0.5rem;
+}
+
+.filter-list li {
+	display: inline;
+}
+
+.filter-list li:hover {
+	cursor: pointer;
+	color: var(--clr-gb-1);
+}
+
+.filter-list li.active {
+	color: var(--clr-btn-active);
+}
+
+.info-clear {
+	cursor: default;
+}
+
+.info-clear:hover {
+	color: var(--clr-gb-1);
+	cursor: pointer;
+} 

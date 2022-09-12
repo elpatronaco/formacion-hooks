@@ -1,0 +1,44 @@
+.item-container {
+	padding: 1rem;
+	align-items: center;
+	gap: 1rem;
+}
+
+.item-container {
+	font-size: 20px;
+	color: var(--clr-gb-2);
+	font-weight: 300;
+}
+
+.check-container {
+	width: 1.8rem;
+	height: 1.8rem;
+	border-radius: 50%;
+	border: 1px solid var(--clr-gb-3);
+	overflow: hidden;
+}
+
+.checked > .check-container {
+	background: url(./assets/icons/check.svg), var(--gradient-check);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.checkbox {
+	appearance: none;
+	background-color: transparent;
+	padding: 0;
+	font-size: 14px;
+	border: none;
+	outline: none;
+	user-select: none;
+}
+
+.check-container, .checkbox {
+	cursor: pointer;
+}
+
+.checked > p {
+	text-decoration: line-through;
+	color: var(--clr-gb-3);
+}
