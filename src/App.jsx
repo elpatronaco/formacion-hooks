@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import Input from './input'
 import Item from './item'
 import './app.css'
+import { THEMES, useTheme } from './theme-context'
 
 const TYPES = Object.freeze({
 	ALL: 'Todos',
@@ -95,9 +96,10 @@ function useTodos() {
 export default function App() {
 	const { add, todos, onInpKeyDown, toggle, clearAll, type, setType, field } =
 		useTodos()
+	const { isLight } = useTheme()
 
 	return (
-		<div className="app flex justify-center">
+		<div className={`app flex justify-center ${isLight ? 'light' : ''}`}>
 			<div className="container flex column">
 				<header className="header flex justify-space-between">
 					<h1>TODO</h1>

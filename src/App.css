@@ -8,7 +8,7 @@
 .header h1 {
 	font-size: 2.5rem;
 	font-family: var(--family-josefin);
-	color: var(--clr-primary);
+	color: var(--heading-color);
 	letter-spacing: 0.8rem;
 }
 
