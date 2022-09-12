@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import Header from './header'
 import Input from './input'
 import Item from './item'
 import './app.css'
-import { THEMES, useTheme } from './theme-context'
+import { useTheme } from './theme-context'
 
 const TYPES = Object.freeze({
 	ALL: 'Todos',
@@ -101,9 +102,7 @@ export default function App() {
 	return (
 		<div className={`app flex justify-center ${isLight ? 'light' : ''}`}>
 			<div className="container flex column">
-				<header className="header flex justify-space-between">
-					<h1>TODO</h1>
-				</header>
+				<Header />
 				<main className="flex column">
 					<div className="card input-card flex">
 						<div className="btn-container flex justify-center">
