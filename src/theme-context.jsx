@@ -1,4 +1,4 @@
-import { createContext, useContext, useReducer } from 'react'
+import { createContext } from 'react'
 
 export const THEMES = Object.freeze({
 	LIGHT: 'light',
@@ -11,31 +11,10 @@ const ThemeContext = createContext({
 	dispatch: () => {},
 })
 
-export function useTheme() {
-	return useContext(ThemeContext)
-}
-
-function reducer(state, action) {
-	switch (action.type) {
-		case 'toggle':
-			return {
-				...state,
-				theme:
-					state.theme === THEMES.LIGHT ? THEMES.DARK : THEMES.LIGHT,
-			}
-		default:
-			return state
-	}
-}
-
-const initialState = { theme: THEMES.DARK }
-
 export function ThemeProvider({ children }) {
-	const [state, dispatch] = useReducer(reducer, initialState)
-
 	return (
 		<ThemeContext.Provider
-			value={{ state, isLight: state.theme === THEMES.LIGHT, dispatch }}
+			value={{ state: THEMES.DARK, isLight: false, dispatch: () => {} }}
 		>
 			{children}
 		</ThemeContext.Provider>
