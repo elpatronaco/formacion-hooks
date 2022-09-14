@@ -1,10 +1,17 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useReducer } from 'react'
 import Header from './header'
 import Counter from './counter'
 import Input from './input'
 import Item from './item'
 import './app.css'
 import { useTheme } from './theme-context'
+
+function useState(initialState) {
+	return useReducer(
+		(state, next) => (typeof next === 'function' ? next(state) : next),
+		initialState
+	)
+}
 
 const TYPES = Object.freeze({
 	ALL: 'Todos',
